@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT和SVN的区别</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .list {
+            width: 500px; 
+            margin: 50px auto;
+        }
+        .list dt{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .list dd{
+            font-size: 18px;
+            border: 1px #777 solid;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <dl>
+            <dt>SVN与GIT的区别：</dt>
+            <dd><b>1.</b>GIT 是分布式的，而SVN是集中式的</dd>
+            <dd><b>2.</b>GIT把内容按元数据方式存储，而SVN是按文件：因为git目录是处于个人机器上的一个克隆版的版本库，它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。</dd>
+            <dd><b>3.</b>GIT分支和SVN的分支不同：svn会发生分支遗漏的情况，而git可以同一个工作目录下快速的在几个分支间切换，很容易发现未被合并的分支，简单而快捷的合并这些文件。</dd>
+            <dd><b>4.</b>GIT没有一个全局的版本号，而SVN有</dd>
+            <dd><b>5.</b>GIT的内容完整性要优于SVN：GIT的内容存储使用的是SHA-1哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。</dd>
+        </dl>
+    </div>
+</body>
+</html>
